@@ -54,8 +54,7 @@ class OrderManager:
     def __init__(self):
         self.order_map: Dict[str, Order] = {}  # 订单存储
         self.TIME_OUT_SECONDS = 15 * 60  # 15分钟未支付自动关闭
-
-    # 创建订单
+        
     def create_order(
             self,
             order_id: str,
